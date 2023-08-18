@@ -9,10 +9,7 @@ pipeline {
     stage('all done') {
       agent any
       steps {
-        sh '''
-          hostname
-          cat /etc/redhat-release
-        '''
+        echo 'You clicked Submit'
       }
     }
   }
