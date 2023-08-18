@@ -19,10 +19,7 @@ pipeline {
         script {
           echo "Good Morning, $firstName"
         }
-        sh '''
-          hostname
-          cat /etc/redhat-release
-        '''
+        echo 'You clicked Submit'
       }
     }
   }
